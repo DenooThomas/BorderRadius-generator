@@ -1,13 +1,126 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
+
+body {
+  background-color: #110f0f;
+  color: #D3D3D3;
+  font-family: "Montserrat", sans-serif;
+}
+
+#root {
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.border-cont {
+  min-width: 600px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  box-sizing: content-box;
+}
+
+.settings-cont {
+  padding: 0 10px;
+  border: 1px solid #464646;
+  background-color: #110f0f;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+.settings-cont .top-row, .settings-cont .bottom-row {
+  display: flex;
+  flex-flow: row nowrap;
+}
+.settings-cont .top-row {
+  align-items: flex-end;
+}
+.settings-cont .input-number {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  margin: 5px;
+  border: 1px solid #464646;
+  border-radius: 3px;
+  background-color: #201D1D;
+  caret-color: #D3D3D3;
+  color: #D3D3D3;
+  padding: 10px;
+  outline: none;
+}
+.settings-cont .input-number:focus {
+  outline: none;
+}
+.settings-cont .input-number::-moz-placeholder {
+  color: #464646;
+}
+.settings-cont .input-number:-ms-input-placeholder {
+  color: #464646;
+}
+.settings-cont .input-number::placeholder {
+  color: #464646;
+}
+
+.button-cont {
+  padding-top: 40px;
+  display: flex;
+  justify-content: center;
+}
+.button-cont .chain-button {
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+  border: 1px solid #464646;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button-cont .chain-button:hover, .button-cont .chain-button:focus {
+  cursor: pointer;
+}
+.button-cont .on {
+  background-color: #757575;
+}
+.button-cont .off {
+  background-color: #201D1D;
+}
+
+.display-cont {
+  padding: 40px;
+  background-color: #110f0f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.display-cont .preview {
+  width: 200px;
+  height: 200px;
+  background-color: #110f0f;
+  border: 1px solid #464646;
+}
+
+.output {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding-top: 50px;
+}
+.output div {
+  width: 600px;
+  height: 150px;
+  border: 1px solid #464646;
+  border-radius: 3px;
+  padding: 20px;
+}/*# sourceMappingURL=index.css.map */
