@@ -54,7 +54,6 @@ function App() {
   }
 
   useEffect(() => {
-    console.log("displayRef styling => ",displayRef.current.style)
     setOutput({
       outputWebkit: <p>-webkit-{displayRef.current.style.cssText}</p>,
       outputMoz: <p>-mozkit-{displayRef.current.style.cssText}</p>,
