@@ -70,8 +70,9 @@ body {
   padding: 10px;
   outline: none;
 }
-.settings-cont .input-number:focus {
+.settings-cont .input-number:focus, .settings-cont .input-number:hover {
   outline: none;
+  cursor: pointer;
 }
 .settings-cont .input-number::-moz-placeholder {
   color: #464646;

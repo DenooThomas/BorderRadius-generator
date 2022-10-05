@@ -78,8 +78,9 @@ body {
     padding: 10px;
     outline: none;
   }
-  .input-number:focus {
+  .input-number:focus, .input-number:hover {
       outline: none;
+      cursor: pointer;
   }
   .input-number::placeholder{
       color: $grey;
