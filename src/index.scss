@@ -33,8 +33,6 @@ body {
   align-items: center;
 }
 
-
-
 .border-cont {
   min-width: $tabWidth;
   display: flex;
@@ -52,7 +50,6 @@ body {
   justify-content: center;
   align-items: center;
   .top-row, .bottom-row{
-
     display: flex;
     flex-flow: row nowrap;
   }
@@ -75,7 +72,6 @@ body {
   .input-number:focus {
       outline: none;
   }
-  
   .input-number::placeholder{
       color: $grey;
   }
