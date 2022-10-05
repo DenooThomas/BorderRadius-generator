@@ -56,7 +56,7 @@ function App() {
   useEffect(() => {
     setOutput({
       outputWebkit: <p>-webkit-{displayRef.current.style.cssText}</p>,
-      outputMoz: <p>-mozkit-{displayRef.current.style.cssText}</p>,
+      outputMoz: <p>-moz-{displayRef.current.style.cssText}</p>,
       outputChrome: <p>{displayRef.current.style.cssText}</p>    
     })
   }, [borders])
@@ -68,20 +68,20 @@ function App() {
           <div className="top-row">
             <input 
               type="number" 
-              className="input-number"
+              className="input-number topleft"
               value={borders.top_left}
               onChange={(e) => handleChange(e.currentTarget.value, "top_left")}
               onClick={focusInput}
               />
             <input 
               type="number" 
-              className="input-number"
+              className="input-number topright"
               value={borders.top_right}
               onChange={(e) => handleChange(e.currentTarget.value, "top_right")}
               onClick={focusInput}
               />
           </div>
-          <div className="bottom-row">
+          <div className="bottom-row bottomleft">
             <input 
               type="number" 
               className="input-number"
@@ -91,7 +91,7 @@ function App() {
               />
             <input 
               type="number" 
-              className="input-number"
+              className="input-number bottomright"
               value={borders.bottom_right}
               onChange={(e) => handleChange(e.currentTarget.value, "bottom_right")}
               onClick={focusInput}

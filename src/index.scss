@@ -1,3 +1,12 @@
+$black: #110f0f;
+$black-light: #201D1D;
+$white: #D3D3D3;
+$grey-light: #757575;
+$grey: #464646;
+
+$tabHeight: 400px;
+$tabWidth: 600px;
+
 * {
   margin: 0;
   padding: 0;
@@ -10,15 +19,15 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
-$black: #110f0f;
-$black-light: #201D1D;
-$white: #D3D3D3;
-$grey-light: #757575;
-$grey: #464646;
+::-moz-selection {
+  color: $black;
+  background: $white;
+}
 
-$tabHeight: 400px;
-$tabWidth: 600px;
-
+::selection {
+  color: $black;
+  background: $white;
+}
 
 body {
   background-color: $black;
@@ -127,6 +136,9 @@ body {
     border: 1px solid $grey;
     border-radius: 3px;
     padding: 20px;
+    p{
+      padding: 2px 0;
+    }
   }
 }
 

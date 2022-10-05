@@ -10,6 +10,16 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
+::-moz-selection {
+  color: #110f0f;
+  background: #D3D3D3;
+}
+
+::selection {
+  color: #110f0f;
+  background: #D3D3D3;
+}
+
 body {
   background-color: #110f0f;
   color: #D3D3D3;
@@ -123,4 +133,7 @@ body {
   border: 1px solid #464646;
   border-radius: 3px;
   padding: 20px;
+}
+.output div p {
+  padding: 2px 0;
 }/*# sourceMappingURL=index.css.map */
