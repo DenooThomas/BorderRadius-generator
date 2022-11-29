@@ -20,4 +20,4 @@ npm start / npm run build
 - [React JS](https://reactjs.org/)
 
 ## To do
-- Simplified syntax output
+- Stronger syntax output (border-radius: 0 0 30px -> border-bottom-right-radius: 30px)
