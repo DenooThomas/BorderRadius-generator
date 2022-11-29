@@ -18,3 +18,6 @@ npm start / npm run build
 
 ## Built with
 - [React JS](https://reactjs.org/)
+
+## To do
+- Simplified syntax output
