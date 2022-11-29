@@ -50,7 +50,7 @@ function App() {
         ...prevBorders,
         [key]: '0'
       }))
-    })
+    return null })
   }
 
   useEffect(() => {
